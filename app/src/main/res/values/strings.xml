@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">MealMate</string>
+    <string name="log_out">Log Out</string>
+    <string name="recipe_name">Recipe Name</string>
+    <string name="view_recipes">View Recipes</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="open_drawer">Open Drawer</string>
+    <string name="close_drawer">Close Drawer</string>
+    <string name="greeting_message">Hey, %1$s ! 👋</string>
+
+
+    <string name="grocery_list">Grocery List</string>
+    <string name="or_login_with">Or Login With</string>
+    <string name="upload_image">Upload Image</string>
+    <string name="recipe_image">Recipe Image</string>
+    <string name="save_recipe">Save Recipe</string>
+    <string name="welcome_to_the_login_page">Welcome to the Login Page</string>
+    <string name="email_user_mail_com">Email: user@mail.com</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="enter_phone_number">Enter phone number</string>
+    <string name="ingredients_one_per_line">Ingredients (one per line)</string>
+    <string name="instructions">Instructions</string>
+    <string name="back_icon">Back Icon</string>
+    <string name="popular_recipes">Popular Recipes</string>
+    <string name="welcome_to_meal_mate">Welcome to Meal Mate !</string>
+    <string name="add_recipe">Add Recipe</string>
+    <string name="item_name">Item Name</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="no_recipes_found">No recipes found.</string>
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="step_by_step_instructions">Step-by-step instructions...</string>
+    <string name="cooking_instructions_will_go_here">Cooking instructions will go here</string>
+</resources>

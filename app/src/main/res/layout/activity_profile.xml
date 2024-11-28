@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/back"
+        android:padding="16dp">
+
+    <!-- Profile Picture Section -->
+    <ImageView
+        android:id="@+id/userProfile"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/user"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="User Profile"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="onProfilePictureClick" /> <!-- Trigger for image selection -->
+
+    <!-- Change Profile Picture Button -->
+    <Button
+        android:id="@+id/btnChangeProfilePic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change Profile Picture"
+        android:backgroundTint="@color/black"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="center"
+        android:onClick="onProfilePictureClick" /> <!-- Open gallery/camera to pick image -->
+
+
+    <!-- User Email Display -->
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:minHeight="48dp"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:padding="12dp"
+        android:text="@string/email_user_mail_com"
+        android:layout_marginBottom="16dp" />
+
+    <!-- User Name -->
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="@string/enter_your_name"
+        android:textColor="@color/black"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:padding="12dp"
+         />
+
+
+    <!-- Phone Number Input -->
+    <EditText
+        android:id="@+id/etPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="@string/enter_phone_number"
+        android:textColor="@color/black"
+        android:inputType="phone"
+        android:minHeight="48dp" />
+
+    <!-- Address Input -->
+    <EditText
+        android:id="@+id/etAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your address"
+        android:textColor="@color/black"
+        android:inputType="textPostalAddress"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp" />
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:backgroundTint="@color/black"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp" />
+</LinearLayout>

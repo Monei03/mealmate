@@ -1,0 +1,102 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- RecyclerView for Grocery List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvGroceryList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/ingredientInputLayout"
+        android:layout_marginBottom="16dp" />
+
+    <!-- LinearLayout for Ingredient Input and Add Button -->
+    <LinearLayout
+        android:id="@+id/ingredientInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_above="@+id/buttonContainer"
+        android:layout_marginBottom="16dp">
+
+        <!-- EditText for Ingredient Name Input -->
+        <EditText
+            android:id="@+id/ingredientNameEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Enter ingredient name"
+            android:backgroundTint="#CCCCCC"
+            android:textColor="#000000"
+            android:textColorHint="#CCCCCC"
+            android:padding="12dp" />
+
+        <!-- Button to Add Ingredient -->
+        <Button
+            android:id="@+id/addIngredientButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#000000"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+    <!-- Button Container for Send SMS and Locate Store -->
+    <LinearLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/phoneNumberEditText"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <!-- Button to Send SMS -->
+        <Button
+            android:id="@+id/sendSmsButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Send Grocery List via SMS"
+            android:backgroundTint="#FFEB3B"
+            android:textColor="#000000" />
+
+        <!-- Button to Locate Nearby Stores -->
+        <Button
+            android:id="@+id/btnLocateStore"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Locate Nearby Stores"
+            android:backgroundTint="#FFEB3B"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <!-- EditText for Phone Number Input -->
+    <EditText
+        android:id="@+id/phoneNumberEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:hint="Enter phone number"
+        android:inputType="phone"
+        android:backgroundTint="#CCCCCC"
+        android:textColor="#000000"
+        android:textColorHint="#CCCCCC"
+        android:padding="12dp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Button to Prompt Add Recipe from Firebase -->
+    <Button
+        android:id="@+id/promptAddRecipeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ingredientInputLayout"
+        android:layout_marginBottom="16dp"
+        android:text="Add Recipe from Firebase"
+        android:backgroundTint="#FFA726"
+        android:textColor="#000000" />
+</RelativeLayout>

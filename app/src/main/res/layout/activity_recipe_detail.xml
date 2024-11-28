@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:scrollbars="vertical"
+    tools:context=".Activity.RecipeDetailActivity">
+
+    <!-- Recipe Image with CardView for a refined look -->
+<androidx.cardview.widget.CardView
+android:layout_width="match_parent"
+android:layout_height="200dp"
+android:layout_marginBottom="16dp"
+app:cardElevation="8dp">
+
+<ImageView
+    android:id="@+id/ivRecipeImage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scaleType="centerCrop"
+    android:contentDescription="Recipe Image" />
+</androidx.cardview.widget.CardView>
+
+    <!-- Recipe Title with enhanced font and shadow -->
+<TextView
+android:id="@+id/tvRecipeTitle"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:textSize="32sp"
+android:textStyle="bold"
+android:layout_gravity="center"
+android:fontFamily="sans-serif-condensed"
+android:textColor="@color/black"
+android:shadowColor="@color/purple_200"
+android:shadowDx="2"
+android:shadowDy="2"
+android:shadowRadius="4"
+android:layout_marginTop="16dp"
+android:layout_marginBottom="12dp"
+android:text="Recipe Title" />
+
+    <!-- Ingredients Section inside a CardView -->
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Ingredients"
+android:textSize="20sp"
+android:textStyle="bold"
+android:fontFamily="sans-serif-medium"
+android:textColor="@color/black"
+android:layout_marginBottom="8dp" />
+
+    <!-- CardView for Ingredients -->
+<androidx.cardview.widget.CardView
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginBottom="16dp"
+app:cardElevation="8dp"
+android:padding="16dp">
+
+<!-- ViewPager2 to display ingredients -->
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPagerIngredients"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</androidx.cardview.widget.CardView>
+
+    <!-- Instructions Section inside CardView for a refined look -->
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Instructions"
+android:textSize="20sp"
+android:textStyle="bold"
+android:fontFamily="sans-serif-medium"
+android:textColor="@color/black"
+android:layout_marginBottom="8dp" />
+
+    <!-- CardView for Instructions -->
+<androidx.cardview.widget.CardView
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginBottom="16dp"
+app:cardElevation="6dp"
+android:padding="16dp">
+
+<TextView
+    android:id="@+id/tvRecipeInstructions"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="16sp"
+    android:textColor="@color/black"
+    android:text="@string/cooking_instructions_will_go_here"
+    android:lineSpacingExtra="4dp" />
+</androidx.cardview.widget.CardView>
+
+    <!-- Add to Cart Button with custom color and padding -->
+<Button
+android:id="@+id/btnAddToCart"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="Add to Cart"
+android:textSize="18sp"
+android:textColor="@android:color/white"
+android:backgroundTint="@color/purple_500"
+android:layout_marginTop="16dp"
+android:layout_marginBottom="8dp"
+android:padding="14dp"
+android:layout_gravity="center"
+android:elevation="6dp" />
+
+    </LinearLayout>

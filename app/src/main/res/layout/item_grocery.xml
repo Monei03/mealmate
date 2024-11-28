@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:background="@drawable/rounded_background">
+
+    <!-- TextView for Grocery Item Title -->
+    <TextView
+        android:id="@+id/groceryItemTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/item_name"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:paddingEnd="8dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:fontFamily="sans-serif-medium" />
+
+    <!-- CheckBox for Purchased State -->
+    <CheckBox
+        android:id="@+id/cbPurchased"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:buttonTint="@color/black"
+        android:tooltipText="Mark as purchased"
+        android:layout_gravity="center_vertical" />
+
+    <!-- Edit Button -->
+    <ImageButton
+        android:id="@+id/btnEditGroceryItem"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:contentDescription="@string/edit"
+        android:src="@drawable/ic_edit"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:layout_marginStart="8dp"
+        android:layout_gravity="center_vertical"
+        app:tint="@color/black" />
+
+    <!-- Delete Button -->
+    <ImageButton
+        android:id="@+id/btnDeleteGroceryItem"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:contentDescription="@string/delete"
+        android:src="@drawable/ic_delete"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:layout_marginStart="8dp"
+        android:layout_gravity="center_vertical"
+        app:tint="@color/black" />
+</LinearLayout>
